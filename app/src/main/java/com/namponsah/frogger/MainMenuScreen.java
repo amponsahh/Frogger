@@ -47,7 +47,7 @@ public class MainMenuScreen extends Screen {
                 }
                 if (inBounds(event, 64, 220 + 84, 192, 42)) {
                     //  interact with other apps
-                    Uri webpageUri = Uri.parse("http://cs.angelo.edu/~namponsah/fr3dgger.html"); // its  still not a rick roll
+                    Uri webpageUri = Uri.parse("https://www.arcadeclassics.net/80s-game-videos/frogger"); // its  still not a rick roll
                     Intent webpageIntent = new Intent(Intent.ACTION_VIEW, webpageUri);
                     ((AndroidGame) game).startActivity(webpageIntent);
                     if (Settings.soundEnabled) {
