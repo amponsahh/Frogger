@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.namponsah.frogger">
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.namponsah.frogger"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:installLocation="preferExternal">
 
     <application
         android:allowBackup="true"
@@ -9,13 +13,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Frogger">
-        <activity android:name=".MainActivity">
+
+        <activity
+            android:name=".Fr3dgger"
+            android:label="@string/app_name"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
     </application>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
 </manifest>
